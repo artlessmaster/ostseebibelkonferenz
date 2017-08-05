@@ -423,11 +423,11 @@
                 formControl = false;
                 frmGrpAnzahl.addClass('has-error');
             }
-
+            
             if (formControl) {
                 $.ajax({
                     type: 'POST',
-                    url: '/php/absenden.php',
+                    url: 'php/absenden.php',
                     data: {
                         vorname: vorname,
                         nachname: nachname,
@@ -435,9 +435,9 @@
                         anzahlErwachsene: anzahlErwachsene,
                         anzahlKinder: anzahlKinder
                     }
-                }).done(function(message)) {
+                }).done(function(message) {
                     alert(message);
-                }
+                });
             }
 
             return false;
