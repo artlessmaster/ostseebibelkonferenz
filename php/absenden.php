@@ -9,7 +9,7 @@ $anzahlKinder = $_POST['anzahlKinder'];
 $empfaenger = "kontakt@ostseebibelkonferenz.de";
 $absendername = "Anmeldeformular";
 $absenderemail = $email;
-$betreff = "Neue Anmeldung";
+$betreff = "Neue Anmeldung zur OBK von ".$vorname." ".$nachname;
 $from = "From: Nils Reimers <absender@domain.de>";
 $text = "Es ist eine neue Anmeldung über das Anmeldeformualr eingetroffen. Folgende Daten wurden übermittelt:
 
