@@ -16,6 +16,10 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h1 h2 h3 h4 h5{
+    font-family: museo;
+}
+
 .text-vertical-center-header {
     display: table-cell;
     text-align: center;
@@ -179,7 +183,7 @@ hr.small {
 .header-logo {
     width: 300px;
     height: auto;
-    
+    font-weight: 100;
 }
 
 /* willkommen */
