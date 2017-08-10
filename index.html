@@ -434,17 +434,22 @@
             var frmGrpVorname = $('#frmGrpVorname');
             var frmGrpNachname = $('#frmGrpNachname');
             var frmGrpEmail = $('#frmGrpEmail');
-            var frmGrpAnzahl = $('#frmGrpAnzahl');
+            var frmGrpErwachsene = $('#frmGrpErwachsene');
+            var frmGrpKleinkinder = $('#frmGrpKleinkinder');
+            var frmGrpKinder = $('#frmGrpKinder');
 
             frmGrpVorname.removeClass('has-error');
             frmGrpNachname.removeClass('has-error');
             frmGrpEmail.removeClass('has-error');
-            frmGrpAnzahl.removeClass('has-error');
+            frmGrpErwachsene.removeClass('has-error');
+            frmGrpKleinkinder.removeClass('has-error');
+            frmGrpKinder.removeClass('has-error');
 
             var vorname = $('#inputVorname').val();
             var nachname = $('#inputNachname').val();
             var email = $('#inputEmail').val();
             var anzahlErwachsene = $('#inputAnzahlErwachsene').val();
+            var anzahlKleinkinder = $('#inputAnzahlKleinkinder').val();
             var anzahlKinder = $('#inputAnzahlKinder').val();
 
             if (vorname == '') {
@@ -461,11 +466,15 @@
             }
             if (anzahlErwachsene == '') {
                 formControl = false;
-                frmGrpAnzahl.addClass('has-error');
+                frmGrpErwachsene.addClass('has-error');
+            }
+            if (anzahlKleinkinder == '') {
+                formControl = false;
+                frmGrpKleinkinder.addClass('has-error');
             }
             if (anzahlKinder == '') {
                 formControl = false;
-                frmGrpAnzahl.addClass('has-error');
+                frmGrpKinder.addClass('has-error');
             }
             
             if (formControl) {
@@ -477,6 +486,7 @@
                         nachname: nachname,
                         email: email,
                         anzahlErwachsene: anzahlErwachsene,
+                        anzahlErwachsene: anzahlKleinkinder,
                         anzahlKinder: anzahlKinder
                     }
                 }).done(function(message) {
@@ -489,6 +499,7 @@
                     $('#inputNachname').val('');
                     $('#inputEmail').val('');
                     $('#inputAnzahlErwachsene').val('0');
+                    $('#inputAnzahlKleinkinder').val('0');
                     $('#inputAnzahlKinder').val('0');
                 });
             }
