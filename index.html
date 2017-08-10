@@ -218,7 +218,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h3 class="tk-museo">Anmeldung</h3>
+                    <h2 class="tk-museo">Anmeldung</h2>
                     <hr class="small">
                     <p>Zur Anmeldung einfach das folgende Formular ausfüllen:</p>
                 </div>
@@ -242,6 +242,22 @@
                                 <label for="inputEmail" class="control-label">Email-Adresse</label>
                                 <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email-Adresse">
                             </div>
+                            <div class="row text-left">
+                                <div class="form-group col-xs-4" id="frmGrpErwachsene">
+                                    <label class="control-label" for="inputAnzahlErwachsene">Anzahl Erwachsene</label>
+                                    <input type="number" class="form-control" id="inputAnzahlErwachsene" min="0" step="1" value="0">
+                                </div>
+                                <div class="form-group col-xs-4" id="frmGrpKleinkinder">
+                                    <label class="control-label" for="inputAnzahlKleinkinder">Kinder bis 3 Jahren</label>
+                                    <input type="number" class="form-control" id="inputAnzahlKleinkinder" min="0" step="1"value="0">
+                                </div>
+                                <div class="form-group col-xs-4" id="frmGrpKinder">
+                                    <label class="control-label" for="inputAnzahlKinder">Kinder ab 4 Jahren</label>
+                                    <input type="number" class="form-control" id="inputAnzahlKinder" min="0" step="1" value="0">
+                                </div>
+                            </div>
+
+                            <!--
                             <div class="form-group row" id="frmGrpAnzahl">
                                 <label class="col-sm-3 col-form-label control-label" for="inputAnzahlErwachsene">Anzahl Erwachsene</label>
                                 <div class="col-sm-3">
@@ -252,7 +268,7 @@
                                     <input type="number" class="form-control" id="inputAnzahlKinder" value="0">
                                 </div>
                             </div>
-
+                            -->
                             <small>Hiermit melde ich mich oder meine Familie verbindlich zur OstseeBibelkonferenz am 04.11.2017 in Kiel an.</small>
                             <br>
                             <button type="submit" class="btn btn-lg btn-dark">anmelden</button>
@@ -261,14 +277,14 @@
                     <div class="col-md-3 col-sm-3 col-xs-2"></div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row kosten">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <div class="col-md-3 col-sm-3 col-xs-2"></div>
                     <div class="col-md-6 col-sm-6 col-xs-8">
                         <h3 class="tk-museo">Kosten</h3>
                         <hr class="small">
-                        <p>Die Kosten für die Konferenz werden komplett durch Spenden getragen. Im vergangenen Jahr lagen die Kosten je Teilnehmer bei XX €.
-                        <br>Gerne kannst Du spenden unter:</p>
+                        <p>Während der Konferenz wird für die anfallenden Kosten gesammelt. Im vergangenen Jahr lagen die Kosten je Teilnehmer bei 20 €.
+                        <br>Gerne kannst Du vorab spenden unter:</p>
                         <p>
                         <span class="hidden_bank" data-value="PHN0cm9uZz5NaXNzaW9uc2dlbWVpbnNjaGFmdCBLaWVsPC9zdHJvbmc+DQo8YnI+REUxMiAyMTA1IDAxNzAgMDA0MSAwMDE1IDUzDQo8YnI+Tk9MQURFMjFLSUUNCjxicj5TdGljaHdvcnQ6IE9CSw==">
                         <span class="glyphicon glyphicon-eur" aria-hidden="true"></span> Kontoverbindung anzeigen</span>
